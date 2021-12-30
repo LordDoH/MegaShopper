@@ -15,7 +15,7 @@
 }
 
 .deploy {
-    background-color: white;
+    background-color: var(--dark-color);
     position: absolute;
     top: 70px;
     right: 0;
@@ -28,7 +28,7 @@
 }
 
 .hide {
-    background-color: white;
+    background-color: var(--dark-color);
     position: absolute;
     top: 70px;
     right: 0;

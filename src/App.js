@@ -1,28 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 // Importar componentes de Layout
 import Header from './components/Layout/Header/Header';
 import Footer from './components/Layout/Footer/Footer';
+// import Landing from './pages/Landing/Landing';
+import P404 from './pages/404/P404';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <P404 />
       <Footer />
     </div>
   );

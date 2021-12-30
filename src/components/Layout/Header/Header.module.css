@@ -25,6 +25,7 @@
 
 .desktopMenu span {
     padding: 0 40px;
+    cursor: pointer;
 }
 
 @media (min-width: 900px) {

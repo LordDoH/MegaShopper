@@ -9,7 +9,7 @@ import Menu from './Menu/Menu';
 function Header() {
   return (
     <div className={Styles.mainContainer}>
-      <img className={Styles.imgHeader} src={Logo} alt="Santa" />
+      <img className={Styles.imgHeader} src={Logo} alt="Logo" />
       <div className={Styles.mobileMenu}>
         <Menu />
       </div>

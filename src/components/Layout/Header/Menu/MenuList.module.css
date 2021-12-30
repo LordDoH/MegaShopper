@@ -1,6 +1,6 @@
 .list li {
     list-style: none;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--primary-color);
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -8,6 +8,7 @@
     justify-content: center;
     font-family: var(--primary-font);
     font-size: 2rem;
+    color: var(--light-color);
 }
 
 .list {
