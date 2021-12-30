@@ -1,0 +1,37 @@
+.imgHeader {
+    width: 250px;
+}
+
+.mainContainer {
+    background-color: var(--primary-color);
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.mobileMenu {
+    display: block;
+    
+}
+
+.desktopMenu {
+    display: none;
+    color: var(--light-color);
+    font-family: var(--primary-font);
+    font-size: 2rem;
+}
+
+.desktopMenu span {
+    padding: 0 40px;
+}
+
+@media (min-width: 900px) {
+    .desktopMenu {
+        display: flex;
+    }
+    .mobileMenu{
+        display:none;
+    }
+}
