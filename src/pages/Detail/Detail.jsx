@@ -20,26 +20,6 @@ function Detail() {
 
   let NoProduct = '';
 
-  // Fallback Page on reload
-  if (productId === null) {
-    NoProduct = (
-      <div className={Styles.noProduct}>
-        <Header />
-        <div className={Styles.mainContainer}>
-          <span className={Styles.title}>There&apos;s nothing here</span>
-          <span className={Styles.text}>
-            Select something from our product&apos;s page:{' '}
-            <Link className={Styles.text} to="/products">
-              Go Shop
-            </Link>
-          </span>
-        </div>
-        <ProductCard />
-        <Footer />
-      </div>
-    );
-    return NoProduct;
-  }
   // Data Product [id] request
   useEffect(() => {
     const reqProduct = async () => {
@@ -49,20 +29,40 @@ function Detail() {
     reqProduct();
   }, [productId]);
 
+  // Fallback Page on reload
+  if (productId === null) {
+    NoProduct = (
+      <div className={Styles.noProduct}>
+        <Header />
+        <div className={Styles.mainContainer}>
+          <span className={Styles.title}>There&apos;s nothing here</span>
+          <span className={Styles.text}>
+            Select something from our product&apos;s page:{' '}
+            <Link className={Styles.link} to="/products">
+              Go Shop
+            </Link>
+          </span>
+        </div>
+        <Footer />
+      </div>
+    );
+    return NoProduct;
+  }
+
   return (
     <div>
       <Header />
       <ProductCard
         className={Styles.productcard}
-        key={productData.image}
-        id={productData.id}
-        title={productData.title}
-        price={productData.price}
-        description={productData.description}
-        category={productData.category}
-        image={productData.image}
-        rate={productData.rating.rate}
-        counter={productData.rating.count}
+        key={productData?.image}
+        id={productData?.id}
+        title={productData?.title}
+        price={productData?.price}
+        description={productData?.description}
+        category={productData?.category}
+        image={productData?.image}
+        rate={productData?.rating.rate}
+        counter={productData?.rating.count}
       />
       <Footer />
     </div>
