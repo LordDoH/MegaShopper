@@ -1,0 +1,41 @@
+.btn {
+    font-size: 4rem;
+    cursor: pointer;
+    margin-left: auto;
+    color: var(--light-color);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+}
+
+.btn:hover {
+    color: var(--boring-color);
+}
+
+.deploy {
+    background-color: var(--dark-color);
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(24px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+    z-index: 200;
+}
+
+.hide {
+    background-color: var(--dark-color);
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-24px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+    z-index: 200;
+}

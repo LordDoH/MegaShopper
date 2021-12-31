@@ -1,0 +1,39 @@
+.imgHeader {
+    width: 250px;
+}
+
+.mainContainer {
+    background-color: var(--primary-color);
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.mobileMenu {
+    display: block;
+    
+}
+
+.desktopMenu {
+    display: none;
+    color: var(--light-color);
+    font-family: var(--primary-font);
+    font-size: 2rem;
+}
+
+.link{
+    color: inherit;
+    text-decoration: none;
+    padding: 0 60px;
+}
+
+@media (min-width: 900px) {
+    .desktopMenu {
+        display: flex;
+    }
+    .mobileMenu{
+        display:none;
+    }
+}

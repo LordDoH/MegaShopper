@@ -1,0 +1,32 @@
+.imgFooter {
+    width: 40px;
+    margin-right: 20px;
+}
+
+.main {
+    background-color: #EEE;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.text span {
+    margin: 5px;
+    color: var(--boring-color);
+    font-size: 1.4rem;
+    text-align: center;
+    font-family: var(--secondary-font);
+}
+
+.text a {
+    text-decoration: none;
+    color: var(--boring-color);
+    cursor: pointer;
+}

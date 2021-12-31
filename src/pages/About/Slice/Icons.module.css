@@ -1,0 +1,9 @@
+.main {
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+    font-size: 40px;
+    margin: auto;
+    color: var(--dark-color);
+    padding: 20px 0;
+}

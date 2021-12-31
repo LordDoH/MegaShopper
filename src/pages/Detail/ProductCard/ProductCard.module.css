@@ -1,0 +1,134 @@
+.button {
+    background-color: var(--success-color);
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 100px;
+    font-family: var(--secondary-font);
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--light-color);
+    margin: 20px auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.category {
+    font-family: var(--primary-font);
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--boring-color);
+    width: 150px;
+    text-align: end;
+}
+
+.count {
+    font-family: var(--primary-font);
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.description {
+    font-family: var(--secondary-font);
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    width: 310px;
+    padding: 20px 0;
+}
+
+.line{
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
+.main {
+    width: 385px;
+    background-color: var(--light-color);
+    border-radius: 8px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 60px auto;
+    padding: 20px 0;
+}
+
+.pic {
+    width: 250px;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 8px;
+    border: 2px solid #AAAAAA;
+}
+
+.price {
+    font-family: var(--primary-font);
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--alert-color);
+    width: 150px;
+}
+
+.priceContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    width: 350px;
+    margin: auto;
+    text-align: center;
+}
+
+.productDataContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    width: 350px;
+    margin: auto;
+}
+
+.rateContainer {
+    display:flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.stars {
+    font-family: var(--primary-font);
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    width: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-family: var(--primary-font);
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: auto;
+    padding: 20px 0 10px 0;
+}
+
+@media (min-width: 900px) {
+    .main {
+        flex-direction: row;
+        width: 900px;
+    }
+}

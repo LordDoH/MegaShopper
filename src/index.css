@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+  /* Colors */
+  --primary-color : #333;
+  --secondary-color : #666;
+  --success-color : #45A00A;
+  --alert-color : #EA2840;
+  --boring-color : #AAA;
+  --dark-color : #3D3D3D;
+  --light-color : #EFEFEF;
+  --warning-color : #FF5500;
+  /* Fonts */
+  --primary-font : 'Ubuntu', sans-serif;
+  --secondary-font : 'Roboto', sans-serif;
+}
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+*::-webkit-scrollbar {
+-webkit-appearance: none;
+}
+
+*::-webkit-scrollbar:vertical {
+width:10px;
+
+}
+
+*::-webkit-scrollbar-thumb {
+background-color:  var(--dark-color);
+border-radius: 20px;
+border: 2px solid #EFF0F6;
+
+}
+
+*::-webkit-scrollbar-track {
+border-radius: 20px;
+
+}
+
+*::-webkit-scrollbar-track {
+
+background:var(--light-color) ;
+border-radius: 20px;
+
+}
+
+html {
+font-size: 62.5%;
+min-height: 100vh;
+}
+
+#root{
+min-height: 100vh;
+}
