@@ -6,7 +6,7 @@ import { FaRegClock } from 'react-icons/fa';
 // Import css
 import Styles from './Card.module.css';
 // Context
-// import context
+import { useStateProduct } from '../../../context/ProductContext';
 
 function Card({
   id = 1,
@@ -14,7 +14,8 @@ function Card({
   price = 50.3,
   image = 'https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg',
 }) {
-  //   here will be the call to the context
+  const { setProductId } = useStateProduct();
+
   const [timer, setTimer] = useState(18000001);
 
   useEffect(() => {
@@ -50,6 +51,9 @@ function Card({
           </div>
           {/* Time check to button and link */}
           <Link
+            onClick={() => {
+              setProductId(id);
+            }}
             className={timer < 18001000 ? Styles.disabled : Styles.enabled}
             disabled={timer < 18001000}
             to={{
