@@ -13,7 +13,9 @@ function Header() {
     // Main Container
     <div className={Styles.mainContainer}>
       {/* Logo */}
-      <img className={Styles.imgHeader} src={Logo} alt="Logo" />
+      <Link to="/">
+        <img className={Styles.imgHeader} src={Logo} alt="Logo" />
+      </Link>
       {/* Mobile menu */}
       <div className={Styles.mobileMenu}>
         <Menu />
