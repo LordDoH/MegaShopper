@@ -2,7 +2,7 @@ import React from 'react';
 // Import css
 import Styles from './About.module.css';
 // Import images
-import Photo from '../../assets/images/Photo.jpeg';
+import Photo from '../../assets/images/photo.jpeg';
 // Import components
 import Object from './Slice/Object';
 import Icons from './Slice/Icons';

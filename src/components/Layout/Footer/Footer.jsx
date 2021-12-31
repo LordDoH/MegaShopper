@@ -2,7 +2,7 @@ import React from 'react';
 // Import CSS Module
 import Styles from './Footer.module.css';
 // Import Santa Image
-import Santa from '../../../assets/images/Santa.png';
+import Santa from '../../../assets/images/santa.png';
 
 function Footer() {
   return (

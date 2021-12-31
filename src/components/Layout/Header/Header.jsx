@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 // Import CSS Module
 import Styles from './Header.module.css';
 // Import Logo
-import Logo from '../../../assets/images/Logo.png';
+import Logo from '../../../assets/images/logo.png';
 // Import Menu
 import Menu from './Menu/Menu';
 

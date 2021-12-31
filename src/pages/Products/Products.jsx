@@ -4,7 +4,7 @@ import axios from '../../services/axios/axios';
 // Import css
 import Styles from './Products.module.css';
 // Import images
-import Bags from '../../assets/images/Bags.png';
+import Bags from '../../assets/images/bags.png';
 // Import layout components
 import Header from '../../components/Layout/Header/Header';
 import Footer from '../../components/Layout/Footer/Footer';

@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 // Import css
 import Styles from './Landing.module.css';
 // Import images
-import Tree from '../../assets/images/Tree.png';
-import Snowbag from '../../assets/images/Snowbag.png';
-import Store from '../../assets/images/Store.png';
+import Tree from '../../assets/images/tree.png';
+import Snowbag from '../../assets/images/snowbag.png';
+import Store from '../../assets/images/store.png';
 // Import layout components
 import Header from '../../components/Layout/Header/Header';
 import Footer from '../../components/Layout/Footer/Footer';

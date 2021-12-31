@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 // Import css
 import Styles from './P404.module.css';
 // Import images
-import I404 from '../../assets/images/Robot 404.png';
+import I404 from '../../assets/images/robot404.png';
 // Import layout components
 import Header from '../../components/Layout/Header/Header';
 import Footer from '../../components/Layout/Footer/Footer';
