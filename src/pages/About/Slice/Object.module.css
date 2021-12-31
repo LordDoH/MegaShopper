@@ -4,6 +4,15 @@
     color: #073642;
 }
 
+.linked {
+    text-decoration: none;
+    color:inherit
+}
+
+.linked:hover {
+    color: #073642;
+}
+
 .num {
     color: #DE669A;
 }

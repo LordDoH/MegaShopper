@@ -13,6 +13,7 @@ import Styles from './Icons.module.css';
 
 function Icons() {
   return (
+    // Creating an Icon bar
     <div className={Styles.main}>
       <FaHtml5 />
       <FaCss3Alt />

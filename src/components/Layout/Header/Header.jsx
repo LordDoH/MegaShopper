@@ -1,4 +1,6 @@
 import React from 'react';
+// Import React Router
+import { Link } from 'react-router-dom';
 // Import CSS Module
 import Styles from './Header.module.css';
 // Import Logo
@@ -8,15 +10,25 @@ import Menu from './Menu/Menu';
 
 function Header() {
   return (
+    // Main Container
     <div className={Styles.mainContainer}>
+      {/* Logo */}
       <img className={Styles.imgHeader} src={Logo} alt="Logo" />
+      {/* Mobile menu */}
       <div className={Styles.mobileMenu}>
         <Menu />
       </div>
+      {/* Desktop menu */}
       <div className={Styles.desktopMenu}>
-        <span>Home</span>
-        <span>Products</span>
-        <span>About</span>
+        <Link className={Styles.link} to="/">
+          Home
+        </Link>
+        <Link className={Styles.link} to="/products">
+          Products
+        </Link>
+        <Link className={Styles.link} to="/about">
+          About
+        </Link>
       </div>
     </div>
   );
