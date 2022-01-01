@@ -46,7 +46,7 @@ function Card({
             <p>
               {timer < 18001000
                 ? 'Time is over'
-                : new Date(timer).toLocaleTimeString()}
+                : new Date(timer).toLocaleTimeString('en-GB')}
             </p>
           </div>
           {/* Time check to button and link */}
